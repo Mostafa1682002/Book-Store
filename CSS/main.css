@@ -201,6 +201,12 @@ header .container .icons #menu {
     text-align: center;
   }
 }
+@media (max-width: 450px) {
+  .home .container {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    text-align: center;
+  }
+}
 .home .container .content h1 {
   font-size: 30px;
 }
