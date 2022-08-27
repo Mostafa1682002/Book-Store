@@ -1,0 +1,81 @@
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2222;
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .logo{
+            height: 50px;
+        }
+        nav{
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            a{
+                padding: 5px 10px;
+                color: var(--black);
+                font-size: 18px;
+                &:hover{
+                    color: var(--main-color);
+                }
+            }
+            @media (max-width:800px) {
+                &{
+                    padding: 10px;
+                    position: absolute;
+                    top: -500px;
+                    left: 0;
+                    right: 0;
+                    flex-flow: column;
+                    background-color: var(--main-color);
+                    // border-top: 3px solid var(--main-color);
+                    &.active{
+                        top: 100%;
+                    }
+                    a{
+                        padding: 10px;
+                        width: 100%;
+                        text-align: center;
+                        &:hover{
+                            color: #fff;
+                            // color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+        .icons{
+            i{
+                width: 35px;
+                height: 35px;
+                line-height: 35px;
+                cursor: pointer;
+                text-align: center;
+                border-radius: 5px;
+                background-color: #eee;
+                color: var(--black);
+                font-size: 22px;
+                &:hover{
+                    color: #fff;
+                    background-color: var(--main-color);
+                }
+            }
+            #menu{
+                display: none;
+                @media (max-width:800px) {
+                    &{
+                        display:inline-block;
+                    }
+                }
+            }
+        }
+    }
+}

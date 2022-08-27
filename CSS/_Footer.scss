@@ -1,0 +1,76 @@
+footer{
+    background-color: #eaeaea;
+        .footer-boxs{
+            width: 96%;
+            margin: auto;
+            display: grid;
+            grid-template-columns:repeat(auto-fill , minmax(250px,1fr));
+            gap: 15px;
+            padding: 20px 0;
+            .box{
+                img{
+                    height: 100px;
+                }
+                h2{
+                    color: var(--black);
+                    margin-bottom: 10px;
+                }
+                .links{
+                    a{
+                        display: block;
+                        padding: 7px 3px 5px;
+                        font-size: 18px;
+                        color: #666;
+                        &:hover{
+                            color: var(--main-color);
+                        }
+                        i{
+                            padding-right:5px ;
+                            color: var(--main-color);
+                        }
+                    }
+                    .email{
+                        text-transform: none;
+                    }
+                }
+                .follow{
+                    margin: 15px 0;
+                    a{
+                        width: 40px;
+                        height: 40px;
+                        line-height: 40px;
+                        border-radius: 10px;
+                        font-size: 22px;
+                        text-align: center;
+                        display: inline-block;
+                        text-align: center;
+                        background-color: #908888;
+                        color: var(--black);
+                        &:hover{
+                            color: #fff;
+                            background-color: var(--main-color);
+                        }
+                    }
+                }
+                form{
+                    input{
+                        width: 100%;
+                        // height: 30px;
+                        padding: 10px 7px;
+                        border-radius: 10px;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+        .cridet{
+            border-top: var(--border);
+            padding: 15px ;
+            text-align: center;
+            font-size: 22px;
+            span{
+                font-weight: 600;
+                color: var(--main-color);
+            }
+        }
+}

@@ -1,0 +1,58 @@
+.features{
+        .features-boxs{
+            display: grid;
+            grid-template-columns: repeat(15,1fr);
+            gap: 15px;
+            overflow: hidden;
+            overflow-x: scroll;
+            width: 96%;
+            margin: auto;
+            height:520px;
+            padding: 30px 15px;
+            .box{
+                width: 300px;
+                background-color: #fff;
+                padding:10px;
+                text-align: center;
+                outline: var(--outline-hover);
+                @media (max-width:768px) {
+                    &{
+                        width: 250px;
+                    }
+                }
+                &:hover{
+                    box-shadow: var(--box-shadow);
+                }
+                img{
+                    width: 150px;
+                }
+                h3{
+                    margin: 10px 0;
+                    color: var(--black);
+                    font-size: 22px;
+                }
+                h5{
+                    color: var(--light-color);
+                    margin-bottom: 7px;
+                    font-size: 20px;
+                }
+                p{
+                    font-size: 18px;
+                    color: var(--main-color);
+                    margin: 7px 0;
+                }
+                .price{
+                    font-size: 23px;
+                    display: block;
+                    span{
+                        font-size: 15px;
+                        text-decoration: line-through;
+                    }
+                }
+                .btn{
+                    border-radius: 0;
+                    font-size: 15px;
+                }
+            }
+        }
+}

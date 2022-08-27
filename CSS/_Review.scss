@@ -1,0 +1,43 @@
+.reviews{
+    .revies-boxs{
+        display: grid;
+        grid-template-columns: repeat(auto-fill , minmax(300px,1fr));
+        gap: 15px;
+        width: 98%;
+        padding: 30px 0;
+        margin: auto;
+        .box{
+            border: var(--border);
+            padding: 15px 10px;
+            border-radius: 10px;
+            .imgs{
+                display: flex;
+                justify-content: space-between;
+                img{
+                    width: 150px;
+                    height: 150px;
+                    border-radius: 50%;
+                }
+                span{
+                    font-size: 120px;
+                    color: #666;
+                }
+            }
+            .content{
+                h3{
+                    color: var(--black);
+                    font-size: 25px;
+                    margin: 7px 0;
+                }
+                p{
+                    margin: 7px 0;
+                    color: #333;
+                }
+                .icons{
+                    font-size: 20px;
+                    color: var(--main-color);
+                }
+            }
+        }
+    }
+}

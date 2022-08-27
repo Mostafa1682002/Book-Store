@@ -1,0 +1,40 @@
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url('../image/bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 120px;
+    @media (max-width:768px) {
+    }
+    .container{
+        width: 96%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill , minmax(550px,1fr));
+        gap: 30px;
+        @media (max-width:768px) {
+            &{
+                grid-template-columns: repeat(auto-fill , minmax(300px,1fr));
+                text-align: center;
+            }
+        }
+        .content{
+            h1{
+                font-size: 30px;
+                span{
+                    color: var(--main-color);
+                }
+            }
+            p{
+                color: #666;
+                font-size: 22px;
+                margin: 10px 0;
+            }
+        }
+        img{
+            width: 100%;
+        }
+    }
+}

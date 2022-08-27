@@ -1,0 +1,31 @@
+.about{
+    padding: 30px 20px;
+    background-color: #fff;
+    display: grid;
+    position: relative;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fill ,minmax(500px,1fr));
+    @media (max-width:768px) {
+        &{
+            grid-template-columns: repeat(auto-fill ,minmax(350px,1fr));
+        }
+    }
+    @media (max-width:400px) {
+        &{
+            grid-template-columns: repeat(auto-fill ,minmax(250px,1fr));
+        }
+    }
+    img{
+        width: 100%;
+    }
+    .content{
+        padding: 80px 15px 0;
+        h1{
+            font-size: 50px;
+            color: var(--black);
+        }
+        p{
+            margin: 10px 0;
+        }
+    }
+}

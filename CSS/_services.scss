@@ -1,0 +1,26 @@
+.services{
+    .container{
+        .services-boxs{
+            display: grid;
+            grid-template-columns: repeat(auto-fill ,minmax(250px,1fr));
+            gap: 15px;
+            .box{
+                box-shadow: var(--box-shadow);
+                padding: 20px;
+                text-align: center;
+                i{
+                    font-size: 45px;
+                    color: var(--main-color);
+                }
+                h3{
+                    margin: 10px 0;
+                    font-size: 25px;
+                }
+                p{
+                    margin-bottom: 7px;
+                    color: #666;
+                }
+            }
+        }
+    }
+}
